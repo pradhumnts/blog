@@ -1,0 +1,176 @@
+.body{
+	background-color:#f9fafa;
+}
+.full{
+	animation-name:pageload;
+	animation-duration:3s;
+	margin-left:22%;
+}
+	nav:hover{
+		background-color:#595959;
+		opacity:0.8;
+	}
+	nav{
+		padding:1.7%;
+		padding-bottom:1.3%;
+		transition:0.6s;
+		font-family:Raleway;
+	}
+	nav li{
+		list-style-type:none;
+		display:inline;
+		padding:1.58%;
+	}
+	nav li a{
+		color:black;
+	}
+	nav:hover a{
+		color:white;
+	}
+	nav li:hover a:hover{
+		text-decoration:none;
+		color:#4d4d4d;
+	}
+	nav li:hover a{
+		color:black;
+	}
+	nav li:hover{
+		background-color:white;
+		border-top:5px solid #009999;
+	}
+.container{
+	position:relative;
+	width:100%;
+	bottom:9%;
+	z-index:-1;
+}
+.container img{
+	width:100%;
+	height:auto;
+}
+.button{
+	position:absolute;
+	top:20%;
+	left:-6%;
+	font-family:Raleway;
+	line-height:1;
+	background-color:white;
+	padding:1%;
+	text-transform:uppercase;
+	border:0;
+	animation-name:name;
+	animation-duration:2s;
+	font-size:60px;
+}
+.hr{
+	width:0.5%;
+	border:0.3px solid black;
+	opacity:0.3;
+	height:50%;
+	margin-left:100%;
+}
+
+@keyframes name{
+	from{left:-30%}
+	to{}
+}
+.place_button{
+	background-color:transparent;
+	border:1px solid black;
+	font-size:30px;
+	transition:0.4s;
+	cursor:pointer;
+	padding:1.5%;
+	width:27%;
+	float:right;
+	position:relative;
+	height:11%;
+	overflow:hidden;
+}
+.span{
+	animation-name:name1;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+}
+#middle{
+	height:600px;
+	width:300px;
+}
+.place_button:hover .span{
+	animation-name:name2;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+}
+.place_button:hover{
+	color:white;
+	background-color:black;
+}
+@keyframes name1{
+	0%{margin-left:-90%;color:white}
+	50%{margin:0%;color:black}
+	100%{margin-left:100%;color:white}
+}
+@keyframes name2{
+	0%{margin-left:-90%;color:black}
+	50%{margin:0%;color:white}
+	100%{margin-left:100%;color:black}
+}
+.image_div{
+	position:relative;
+	width:100%;
+}
+.image_div:hover .image{
+	filter:brightness(60%);
+}
+.image_div:hover .paris{
+	transform:translateY(-30%);
+	color:white;
+}
+.image{
+	transition:0.6s;
+}
+.paris{
+	position:absolute;
+	top:30%;
+	transition:0.6s;
+	left:10%;
+	color:transparent;
+	font-family:Raleway;
+	padding-right:3%;
+}
+@keyframes pageload{
+	from{opacity:0.1}
+	to{opacity:1}
+}
+.mynav{
+	width:20%;
+	top:0.5%;
+	height:104%;
+	position:fixed;
+	z-index:1;
+	overflow:scroll;
+}
+.mynav li{
+	display:block;
+	cursor:pointer;
+	padding:5% 8%;
+}
+.mynav li:hover{
+	color:#009999;
+}
+.mynav:hover{
+	background-color:#f9fafa;
+	opacity:1;
+}
+.mynav:hover a{
+	color:black;
+}
+.mynav li:hover{
+	background-color:#f9fafa;
+	border:0;
+	padding-left:15%;
+	transition:0.3s;
+}
+.mt:hover #myspan2{
+	color:black;	
+}

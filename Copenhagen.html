@@ -1,0 +1,165 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+ 
+<!DOCTYPE html/>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Copenhagen</title>
+	<link rel="stylesheet" href="travel.css">
+	<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-grid.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-grid.min.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-reboot.css">      
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-reboot.min.css">
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.bundle.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.bundle.min.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.min.js"></script>
+</head>
+	<body>
+	
+	    <div style="position:relative; height:90%;overflow:hidden">
+			<img src="places/Copenhagen/maxresdefault.jpg" style="width:100%; position:absolute;z-index:-1;">
+			<p class="cityhead">Copenhagen</p>
+			<img onclick="window.history.back()" src="icons/back-button.png" class="back">
+		</div>
+		<br>
+		<p class="slogan">Wonderful Copenhagen.</p>
+		<div class="row" style="padding:3%;padding-right:0%;padding-left:5%;width:100%">
+			<div class="col-sm-7" style="letter-spacing: 0.5px;font-size: 15px">
+			<p>Copenhagen, Denmark’s capital, sits on the coastal islands of Zealand and Amager. It’s linked to Malmo in southern Sweden by the Öresund Bridge. Indre By, the city's historic center, contains Frederiksstaden, an 18th-century rococo district, home to the royal family’s Amalienborg Palace.
+			<br><br>
+			Nearby is Christiansborg Palace and the Renaissance-era Rosenborg Castle, surrounded by gardens and home to the crown jewels.Originally a Viking fishing village established in the 10th century in the vicinity of what is now Gammel Strand, Copenhagen became the capital of Denmark in the early 15th century.
+			<br><br>
+			Copenhagen has seen strong urban and cultural development, facilitated by investment in its institutions and infrastructure. The city is the cultural, economic and governmental centre of Denmark; it is one of the major financial centres of Northern Europe
+			<br><br>
+			Copenhagen has become increasingly integrated with the Swedish province of Scania and its largest city, Malmö, forming the Øresund Region. With a number of bridges connecting the various districts, the cityscape is characterised by parks, promenades and waterfronts.
+			<br><br>
+			Copenhagen is home to the University of Copenhagen, the Technical University of Denmark, Copenhagen Business School and the IT University of Copenhagen. The University of Copenhagen, founded in 1479, is the oldest university in Denmark. Copenhagen is home to the FC København and Brøndby football clubs.</p>	
+			</div>
+			<div class="col-sm-5">
+			<br><br>
+			<img src="places/Copenhagen/HandLuggageOnly-12-2.jpg" style="width:80%;">
+			</div>
+		</div>
+		<br>
+		<p class="slogan">Plan Your Trip To Copenhagen</p>
+		<br>
+			<div class="row" style="width: 100%;padding: 2%;padding-right: 0;overflow: hidden;">
+				<div class="col-sm-4">
+					<img src="places/Copenhagen/Screenshot_2020-01-29 Nimb.png" style="width:100%;">
+					<div class="hotel">
+						<p class="hotel-name">Nimb</p>
+						<p >Opulent hotel featuring ornate suites, plus 9 restaurents, 4 pool, a private beach & a luxe spa.</p>
+						<button class="btn btn-primary">Book Now</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+						<img src="places/Copenhagen/Screenshot_2020-01-29 Hotel D'Angleterre.png" style="width:100%">
+						<div class="hotel">
+							<p class="hotel-name">Hotel D'Angleterre</p>
+							<p >Upscale rooms & suites in a 1755 hotel with a spa, an indoor pool & a sophisticated restaurant.</p>
+							<button class="btn btn-primary">Book Now</button>
+						</div>
+					</div>
+					<div class="col-sm-4">
+							<img src="places/Copenhagen/Screenshot_2020-01-29 Hotel Sanders.png" style="width:100%">
+							<div class="hotel">
+								<p class="hotel-name">Hotel Sanders</p>
+								<p >Elegant, vintage-inspired hotel offering a sophisticated bar, a rooftop deck & free breakfast.</p>
+								<button class="btn btn-primary">Book Now</button>
+							</div>
+						</div>
+			</div>
+			<br><br>
+			<p class="slogan">Explore Your Entertainment Options</p>
+		
+			<br><br>
+			<div class="row" style="width:100%;padding-left:2%">
+				<div class="col-sm-4 thing">
+			  		<img class="river" src="places/Copenhagen/Tivoli Gardens.jpg">
+					<div class="thing-div">
+						<p class="thing-name">Tivoli Gardens</p>
+
+					</div>
+				</div>
+				
+				
+			  <div class="col-sm-4 thing">
+				<img class="river" src="places/Copenhagen/The Little Mermaid.jpg">
+			  <div class="thing-div">
+				  <p class="thing-name">The Little Mermaid</p>
+			  </div>
+		  </div>
+				  <div class="col-sm-4 thing">
+						<img class="river" src="places/Copenhagen/Nyhavn.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">Nyhavn</p>
+					  </div>
+				  </div>					
+			</div>
+			<br>
+			<div class="row" style="width:100%;padding-left:2%">
+					<div class="col-sm-4 thing">
+						  <img class="river" src="places/Copenhagen/Amalienborg.jpg">
+						<div class="thing-div">
+							<p class="thing-name">Amalienborg</p>
+	
+						</div>
+					</div>
+					<div class="col-sm-4 thing" >
+						<img class="river" src="places/Copenhagen/Rosenborg Castle.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">Rosenborg Castle</p>
+					  </div>
+				  </div>
+				  
+					  <div class="col-sm-4 thing" >
+							<img class="river" src="places/Copenhagen/Frederik's Church.jpg" >
+						  <div class="thing-div">
+							  <p class="thing-name">Frederik's Church</p>
+						  </div>
+					  </div>					
+				</div>
+				<br>
+			<div class="row" style="width:100%;padding-left:2%">
+					<div class="col-sm-4 thing" >
+						  <img class="river" src="places/Copenhagen/Christiansborg Palace.jpg" >
+						<div class="thing-div">
+							<p class="thing-name">Christiansborg Palace</p>
+	
+						</div>
+					</div>
+					<div class="col-sm-4 thing" >
+							<img class="river" src="places/Copenhagen/The Round Tower.jpg" >
+						  <div class="thing-div">
+							  <p class="thing-name">The Round Tower</p>
+	  
+						  </div>
+					  </div>
+					  <div class="col-sm-4 thing" >
+						<img class="river" src="places/Copenhagen/Strøget.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">Strøget</p>
+  
+					  </div>
+				  </div>
+				  					
+				</div>
+		
+			<br><br>
+			<script>
+				
+			</script>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+ 
+<!DOCTYPE html/>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title> Barcelona</title>
+	<link rel="stylesheet" href="travel.css">
+	<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-grid.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-grid.min.css">
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-reboot.css">      
+		<link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap-reboot.min.css">
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.bundle.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.bundle.min.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.js"></script>
+		<script src="bootstrap-4.0.0-dist\js\bootstrap.min.js"></script>
+</head>
+	<body style="background-color:#FDF5E6">
+	
+	    <div style="position:relative; height:90%;overflow:hidden">
+			<img src="places/Barcelona/aerial-photography-of-city-1388030.jpg" style="width:100%; position:absolute;z-index:-1;">
+			<p class="cityhead">Barcelona</p>
+			<img onclick="window.history.back()" src="icons/back-button.png" class="back">
+		</div>
+		<br>
+		<p class="slogan">Barcelona inspires.</p>
+		<div class="row" style="padding:3%;padding-right:0%;padding-left:5%;width:100%">
+			<div class="col-sm-7" style="letter-spacing: 0.5px;font-size: 15px">
+			<p>Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture. The fantastical Sagrada Família church and other modernist landmarks designed by Antoni Gaudí dot the city. Museu Picasso and Fundació Joan Miró feature modern art by their namesakes.
+			<br><br>
+            It is the capital and largest city of the autonomous community of Catalonia, as well as the second most populous municipality of Spain. With a population of 1.6 million within city limits, its urban area extends to numerous neighbouring municipalities within the Province of Barcelona and is home to around 4.8 million people
+			<br><br>
+			Founded as a Roman city, in the Middle Ages Barcelona became the capital of the County of Barcelona. After merging with the Kingdom of Aragon, Barcelona continued to be an important city in the Crown of Aragon as an economic and administrative centre of this Crown and the capital of the Principality of Catalonia.
+			<br><br>
+			Barcelona is one of the world's leading tourist, economic, trade fair and cultural centres, and its influence in commerce, education, entertainment, sports, media, fashion, science, and the arts all contribute to its status as one of the major global cities.
+			<br><br>
+			the city was ranked Europe's third and one of the world's most successful as a city brand.[14] In the same year the city was ranked Europe's fourth best city for business and fastest improving European city, with growth improved by 17% per year.</p>	
+			</div>
+			<div class="col-sm-5">
+			<br><br>
+			<img src="places/Barcelona/Barcelona_Architecture-Virginia_Duran-6-Sagrada_Familia.jpg" style="width:80%;">
+			</div>
+		</div>
+		<br>
+		<p class="slogan">Plan Your Trip To Barcelona</p>
+		<br>
+			<div class="row" style="width: 100%;padding: 2%;padding-right: 0;overflow: hidden;">
+				<div class="col-sm-4">
+					<img src="places/barcelona/Screenshot_2020-01-29 Mandarin Oriental, Barcelona.jpg" style="width:100%;">
+					<div class="hotel">
+						<p class="hotel-name">Mandarin Oriental</p>
+						<p >High-end hotel with acclaimed restaurants & stylish bars, plus a spa & a rooftop pool.</p>
+						<button class="btn btn-primary">Book Now</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+						<img src="places/barcelona/Screenshot_2020-01-29 W Barcelona.png" style="width:100%">
+						<div class="hotel">
+							<p class="hotel-name">W Barcelona</p>
+							<p>Chic rooms in a trendy hotel offering sea views & a rooftop bar, plus a spa, dining & a pool.</p>
+							<button class="btn btn-primary">Book Now</button>
+						</div>
+					</div>
+					<div class="col-sm-4">
+							<img src="places/Barcelona/Screenshot_2020-01-29 Hotel El Palace Barcelona.png" style="width:100%">
+							<div class="hotel">
+								<p class="hotel-name">Hotel El Palace Barcelona</p>
+								<p >Posh quarters in a elegant hotel, plus a renowned restaurant, a spa & a rooftop garden with a pool.</p>
+								<button class="btn btn-primary">Book Now</button>
+							</div>
+						</div>
+			</div>
+			<br><br>
+			<p class="slogan">Explore Your Entertainment Options</p>
+		
+			<br><br>
+			<div class="row" style="width:100%;padding-left:2%">
+				<div class="col-sm-4 thing">
+			  		<img class="river" src="places/Barcelona/La Sagrada Familia.jpg">
+					<div class="thing-div">
+						<p class="thing-name">La Sagrada Familia</p>
+
+					</div>
+				</div>
+				
+				
+			  <div class="col-sm-4 thing">
+				<img class="river" src="places/Barcelona/Park Güell.jpg">
+			  <div class="thing-div">
+				  <p class="thing-name">Park Güell</p>
+			  </div>
+		  </div>
+				  <div class="col-sm-4 thing">
+						<img class="river" src="places/Barcelona/Casa Milà.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">Casa Milà</p>
+					  </div>
+				  </div>					
+			</div>
+			<br>
+			<div class="row" style="width:100%;padding-left:2%">
+					<div class="col-sm-4 thing">
+						  <img class="river" src="places/Barcelona/Casa Batlló.jpg">
+						<div class="thing-div">
+							<p class="thing-name">Casa Batlló</p>
+	
+						</div>
+					</div>
+					<div class="col-sm-4 thing" >
+						<img class="river" src="places/Barcelona/La Rambla.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">La Rambla</p>
+					  </div>
+				  </div>
+				  
+					  <div class="col-sm-4 thing" >
+							<img class="river" src="places/Barcelona/Gothic Quarter.jpg" >
+						  <div class="thing-div">
+							  <p class="thing-name">Gothic Quarter</p>
+						  </div>
+					  </div>					
+				</div>
+				<br>
+			<div class="row" style="width:100%;padding-left:2%">
+					<div class="col-sm-4 thing" >
+						  <img class="river" src="places/Barcelona/Mercado de La Boqueria.jpg" >
+						<div class="thing-div">
+							<p class="thing-name">Mercado de La Boqueria</p>
+	
+						</div>
+					</div>
+					<div class="col-sm-4 thing" >
+							<img class="river" src="places/Barcelona/Montjuïc.jpg" >
+						  <div class="thing-div">
+							  <p class="thing-name">Montjuïc</p>
+	  
+						  </div>
+					  </div>
+					  <div class="col-sm-4 thing" >
+						<img class="river" src="places/Barcelona/Plaça de Catalunya.jpg" >
+					  <div class="thing-div">
+						  <p class="thing-name">Plaça de Catalunya</p>
+  
+					  </div>
+				  </div>
+				  					
+				</div>
+		
+			<br><br>
+			<script>
+				
+			</script>
+	</body>
+</html>
